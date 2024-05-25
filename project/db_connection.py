@@ -1,6 +1,10 @@
 import pymongo
+from dotenv import load_dotenv
+import os
 
-url = "mongodb+srv://testhack:L4g3Ptj8g7D0cXIH@kairos.79p8xqm.mongodb.net/"
+load_dotenv()
+
+url = os.getenv('Mongo_DB_API')
 
 client = pymongo.MongoClient(url)
 
