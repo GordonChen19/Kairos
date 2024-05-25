@@ -1,1 +1,10 @@
-<html><p>hello world</p></html>
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/index.css' %}" />
+    <script src="{% static '/js/index.js' %}"></script>
+<p>hello world</p>
+<h1>hello</h1>
+
+</html>
